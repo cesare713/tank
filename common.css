@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+* {
+    margin: 0xp;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#stage {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    background-image: url(../images/bg.jpg);
+    overflow: hidden;
+}
+
+#hero, #mybul, .enemy, .ebul, #info {
+    position: absolute;
+}
+
+#info {
+    width: 500px;
+    height: 40px;
+    line-height: 40px;
+    background-color: white;
+    left: 50%;
+    top: calc(50% - 270px);
+    transform: translate(-50%,-50%);
+}
+
+#info>div {
+    float: left;
+    width: calc(100% / 3);
+}
+
+#level { text-align: center; }
+#score { text-align: right; }
